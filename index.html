@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head profile="http://114.143.186.218:8888/fiportalweb/">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>FI Portal</title>
+<link rel="icon" type="image/png" href="./images/dskLogoFavicon.png" />
+<link rel="stylesheet" href="./css/Stylesheet.css?v=2.4" type="text/css"
+	title="Style">
+<script type="text/javascript" src="./js/JavaScript.js?v=2.4"></script>
+<script type="text/javascript">
+	function onPageLoad() {
+		document.body.style.zoom="100%";
+	}
+</script>
+</head>
+<frameset rows="90px,*" border="0" onload="onPageLoad();">
+	<frameset>
+		<frameset id="headerFrameSet">
+			<frame src="Header.jsp" name="topRightFrame" title="HEADER"
+				bordercolor="red" style="background-image: url('./images/ui-bg_header500x100.png');">
+		</frameset>
+	</frameset>
+	<frameset id="mainFrameSet" cols="325px,*">
+		<frame src="Login.jsp" name="loginFrame" title="LOGIN & SERVICES"
+			id="loginFrame" bordercolor="red">
+		<frame src="DisplayDetails.html" name="classFrame" id="classFrame"
+			style="border-top: 1px solid #F28500;" title="All descriptions"
+			scrolling="yes">
+	</frameset>
+</frameset>
+</html>
